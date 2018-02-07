@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03790C4E202B8F14009E7E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03790C4D202B8F14009E7E5A /* AppDelegate.swift */; };
+		03790C50202B8F14009E7E5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03790C4F202B8F14009E7E5A /* ViewController.swift */; };
+		03790C53202B8F14009E7E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03790C51202B8F14009E7E5A /* Main.storyboard */; };
+		03790C55202B8F14009E7E5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03790C54202B8F14009E7E5A /* Assets.xcassets */; };
+		03790C58202B8F14009E7E5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03790C56202B8F14009E7E5A /* LaunchScreen.storyboard */; };
+		03790C5D202B8F7B009E7E5A /* Buglife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EAF7181FC8DAB000196024 /* Buglife.framework */; };
+		03790C5E202B8F7B009E7E5A /* Buglife.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7EAF7181FC8DAB000196024 /* Buglife.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B70926B3200FE7E700105417 /* LIFEToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B70926A0200FE7E600105417 /* LIFEToolButton.m */; };
 		B70926B4200FE7E700105417 /* LIFEImageEditorView.h in Headers */ = {isa = PBXBuildFile; fileRef = B70926A1200FE7E600105417 /* LIFEImageEditorView.h */; };
 		B70926B5200FE7E700105417 /* LIFEImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70926A2200FE7E600105417 /* LIFEImageEditorViewController.m */; };
@@ -126,14 +133,14 @@
 		B7EAF9C71FC8DBA900196024 /* LIFEAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF8FF1FC8DBA900196024 /* LIFEAnnotation.m */; };
 		B7EAF9C81FC8DBA900196024 /* LIFEAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9001FC8DBA900196024 /* LIFEAppInfo.h */; };
 		B7EAF9C91FC8DBA900196024 /* LIFEAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF9011FC8DBA900196024 /* LIFEAppInfo.m */; };
-		B7EAF9CA1FC8DBA900196024 /* LIFEAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9021FC8DBA900196024 /* LIFEAttribute.h */; };
+		B7EAF9CA1FC8DBA900196024 /* LIFEAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9021FC8DBA900196024 /* LIFEAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EAF9CB1FC8DBA900196024 /* LIFEAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF9031FC8DBA900196024 /* LIFEAttribute.m */; };
-		B7EAF9CC1FC8DBA900196024 /* LIFEDeviceBatteryState.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9041FC8DBA900196024 /* LIFEDeviceBatteryState.h */; };
+		B7EAF9CC1FC8DBA900196024 /* LIFEDeviceBatteryState.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9041FC8DBA900196024 /* LIFEDeviceBatteryState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EAF9CD1FC8DBA900196024 /* LIFEDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9051FC8DBA900196024 /* LIFEDeviceInfo.h */; };
 		B7EAF9CE1FC8DBA900196024 /* LIFEDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF9061FC8DBA900196024 /* LIFEDeviceInfo.m */; };
 		B7EAF9CF1FC8DBA900196024 /* LIFEImageFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9071FC8DBA900196024 /* LIFEImageFormat.h */; };
 		B7EAF9D01FC8DBA900196024 /* LIFEImageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF9081FC8DBA900196024 /* LIFEImageFormat.m */; };
-		B7EAF9D11FC8DBA900196024 /* LIFEReport.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9091FC8DBA900196024 /* LIFEReport.h */; };
+		B7EAF9D11FC8DBA900196024 /* LIFEReport.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF9091FC8DBA900196024 /* LIFEReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EAF9D21FC8DBA900196024 /* LIFEReport.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF90A1FC8DBA900196024 /* LIFEReport.m */; };
 		B7EAF9D31FC8DBA900196024 /* LIFEReportAttachmentImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EAF90B1FC8DBA900196024 /* LIFEReportAttachmentImpl.h */; };
 		B7EAF9D41FC8DBA900196024 /* LIFEReportAttachmentImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B7EAF90C1FC8DBA900196024 /* LIFEReportAttachmentImpl.m */; };
@@ -249,7 +256,38 @@
 		BCD236BE200FF2BF00056914 /* UIControl+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD236BC200FF2BF00056914 /* UIControl+LIFEAdditions.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		03790C5F202B8F7B009E7E5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7EAF70F1FC8DAB000196024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7EAF7171FC8DAB000196024;
+			remoteInfo = Buglife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03790C61202B8F7B009E7E5A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				03790C5E202B8F7B009E7E5A /* Buglife.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		03790C4B202B8F14009E7E5A /* Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03790C4D202B8F14009E7E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03790C4F202B8F14009E7E5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03790C52202B8F14009E7E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03790C54202B8F14009E7E5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03790C57202B8F14009E7E5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03790C59202B8F14009E7E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B70926A0200FE7E600105417 /* LIFEToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIFEToolButton.m; sourceTree = "<group>"; };
 		B70926A1200FE7E600105417 /* LIFEImageEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIFEImageEditorView.h; sourceTree = "<group>"; };
 		B70926A2200FE7E600105417 /* LIFEImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIFEImageEditorViewController.m; sourceTree = "<group>"; };
@@ -495,6 +533,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03790C48202B8F14009E7E5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03790C5D202B8F7B009E7E5A /* Buglife.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7EAF7141FC8DAB000196024 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,6 +551,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03790C4C202B8F14009E7E5A /* Tester */ = {
+			isa = PBXGroup;
+			children = (
+				03790C4D202B8F14009E7E5A /* AppDelegate.swift */,
+				03790C4F202B8F14009E7E5A /* ViewController.swift */,
+				03790C51202B8F14009E7E5A /* Main.storyboard */,
+				03790C54202B8F14009E7E5A /* Assets.xcassets */,
+				03790C56202B8F14009E7E5A /* LaunchScreen.storyboard */,
+				03790C59202B8F14009E7E5A /* Info.plist */,
+			);
+			path = Tester;
+			sourceTree = "<group>";
+		};
 		B709269F200FE7E600105417 /* Image Editor */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,6 +646,7 @@
 			children = (
 				B7EAF8B11FC8DB9F00196024 /* Info.plist */,
 				B7EAF8B31FC8DBA900196024 /* Source */,
+				03790C4C202B8F14009E7E5A /* Tester */,
 				B7EAF7191FC8DAB000196024 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -595,6 +655,7 @@
 			isa = PBXGroup;
 			children = (
 				B7EAF7181FC8DAB000196024 /* Buglife.framework */,
+				03790C4B202B8F14009E7E5A /* Tester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -890,9 +951,12 @@
 			files = (
 				B7EAFA251FC8DBA900196024 /* LIFEBugButtonWindow.h in Headers */,
 				B70926F9200FE89F00105417 /* LIFEToastController.h in Headers */,
+				B7EAF9CA1FC8DBA900196024 /* LIFEAttribute.h in Headers */,
+				B7EAF9CC1FC8DBA900196024 /* LIFEDeviceBatteryState.h in Headers */,
 				B7EAF9871FC8DBA900196024 /* LIFEMacros.h in Headers */,
 				B70926B6200FE7E700105417 /* LIFEImageEditorSegmentedControl.h in Headers */,
 				B7EAFA001FC8DBA900196024 /* LIFEUserDefaults.h in Headers */,
+				B7EAF9D11FC8DBA900196024 /* LIFEReport.h in Headers */,
 				B7EAF9E41FC8DBA900196024 /* LIFEAttachmentManager.h in Headers */,
 				B7EAF9A81FC8DBA900196024 /* LIFEAVPlayerViewController.h in Headers */,
 				B7EAF9D51FC8DBA900196024 /* LIFEReportOwner.h in Headers */,
@@ -907,7 +971,6 @@
 				B7EAF9851FC8DBA900196024 /* LIFEGeometry.h in Headers */,
 				B70926E9200FE83C00105417 /* LIFEJelloView.h in Headers */,
 				B70926E3200FE83C00105417 /* LIFEContainerModalPresentAnimator.h in Headers */,
-				B7EAF9D11FC8DBA900196024 /* LIFEReport.h in Headers */,
 				B7EAF9FC1FC8DBA900196024 /* LIFESwizzler.h in Headers */,
 				B7EAF9AC1FC8DBA900196024 /* LIFELogViewController.h in Headers */,
 				B7EAF9DC1FC8DBA900196024 /* LIFEVideoAttachment.h in Headers */,
@@ -917,7 +980,6 @@
 				B7EAF9E01FC8DBA900196024 /* LIFEInputField+Protected.h in Headers */,
 				B70926E6200FE83C00105417 /* LIFEWindowBlindsAnimator.h in Headers */,
 				B70926DF200FE83C00105417 /* LIFEContainerWindow.h in Headers */,
-				B7EAF9CA1FC8DBA900196024 /* LIFEAttribute.h in Headers */,
 				B7EAF9EA1FC8DBA900196024 /* LIFEDependencyLoader.h in Headers */,
 				B7EAF9DB1FC8DBA900196024 /* LIFEUserFacingAttachment.h in Headers */,
 				B7EAFA291FC8DBA900196024 /* LIFEFloatingButton.h in Headers */,
@@ -953,7 +1015,6 @@
 				B7EAF9F81FC8DBA900196024 /* LIFERecordingShrinker.h in Headers */,
 				B7EAF9C61FC8DBA900196024 /* LIFEAnnotation.h in Headers */,
 				B7EAF9BE1FC8DBA900196024 /* LIFEInputField.h in Headers */,
-				B7EAF9CC1FC8DBA900196024 /* LIFEDeviceBatteryState.h in Headers */,
 				B7EAF9FA1FC8DBA900196024 /* LIFEReportBuilder.h in Headers */,
 				B7EAF98A1FC8DBA900196024 /* NSError+LIFEAdditions.h in Headers */,
 				B7EAF9C21FC8DBA900196024 /* LIFETextInputField.h in Headers */,
@@ -1019,6 +1080,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		03790C4A202B8F14009E7E5A /* Tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03790C5C202B8F14009E7E5A /* Build configuration list for PBXNativeTarget "Tester" */;
+			buildPhases = (
+				03790C47202B8F14009E7E5A /* Sources */,
+				03790C48202B8F14009E7E5A /* Frameworks */,
+				03790C49202B8F14009E7E5A /* Resources */,
+				03790C61202B8F7B009E7E5A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03790C60202B8F7B009E7E5A /* PBXTargetDependency */,
+			);
+			name = Tester;
+			productName = Tester;
+			productReference = 03790C4B202B8F14009E7E5A /* Tester.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B7EAF7171FC8DAB000196024 /* Buglife */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7EAF7201FC8DAB000196024 /* Build configuration list for PBXNativeTarget "Buglife" */;
@@ -1043,9 +1123,14 @@
 		B7EAF70F1FC8DAB000196024 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Buglife, Inc.";
 				TargetAttributes = {
+					03790C4A202B8F14009E7E5A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					B7EAF7171FC8DAB000196024 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -1058,6 +1143,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B7EAF70E1FC8DAB000196024;
 			productRefGroup = B7EAF7191FC8DAB000196024 /* Products */;
@@ -1065,11 +1151,22 @@
 			projectRoot = "";
 			targets = (
 				B7EAF7171FC8DAB000196024 /* Buglife */,
+				03790C4A202B8F14009E7E5A /* Tester */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		03790C49202B8F14009E7E5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03790C58202B8F14009E7E5A /* LaunchScreen.storyboard in Resources */,
+				03790C55202B8F14009E7E5A /* Assets.xcassets in Resources */,
+				03790C53202B8F14009E7E5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7EAF7161FC8DAB000196024 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1080,6 +1177,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		03790C47202B8F14009E7E5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03790C50202B8F14009E7E5A /* ViewController.swift in Sources */,
+				03790C4E202B8F14009E7E5A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7EAF7131FC8DAB000196024 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1204,7 +1310,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		03790C60202B8F7B009E7E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7EAF7171FC8DAB000196024 /* Buglife */;
+			targetProxy = 03790C5F202B8F7B009E7E5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03790C51202B8F14009E7E5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03790C52202B8F14009E7E5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03790C56202B8F14009E7E5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03790C57202B8F14009E7E5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		03790C5A202B8F14009E7E5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7943G7Y9QA;
+				INFOPLIST_FILE = Tester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerofinancial.Tester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03790C5B202B8F14009E7E5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7943G7Y9QA;
+				INFOPLIST_FILE = Tester/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zerofinancial.Tester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B7EAF71E1FC8DAB000196024 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1325,6 +1493,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7943G7Y9QA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 2.0.0;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1349,6 +1518,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7943G7Y9QA;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 2.0.0;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1366,6 +1536,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03790C5C202B8F14009E7E5A /* Build configuration list for PBXNativeTarget "Tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03790C5A202B8F14009E7E5A /* Debug */,
+				03790C5B202B8F14009E7E5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B7EAF7121FC8DAB000196024 /* Build configuration list for PBXProject "Buglife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
