@@ -163,7 +163,7 @@ static NSString * const kPlatform = @"ios";
     NSMutableDictionary *reportDict = [report JSONDictionary].mutableCopy;
     [LIFENSMutableDictionaryify(reportDict) life_safeSetObject:self.sdkVersion forKey:@"sdk_version"];
     [LIFENSMutableDictionaryify(reportDict) life_safeSetObject:self.sdkName forKey:@"sdk_name"];
-    
+
     NSMutableDictionary *mutableParameters = [NSMutableDictionary dictionary];
     mutableParameters[@"report"] = reportDict;
     
@@ -190,6 +190,11 @@ static NSString * const kPlatform = @"ios";
     
     // Use delegate submission method, if it exists.
     if ([_delegate respondsToSelector:@selector(submitReport:description:attachmentImages:wasSuccessful:)]) {
+        
+        // Get rid of all the image data
+        [reportDict removeObjectForKey:@"base64_log_data"];
+        [reportDict removeObjectForKey:@"base64_screenshot_data"];
+        [reportDict removeObjectForKey:@"attachments"];
         
         NSMutableArray *images = [NSMutableArray new];
         

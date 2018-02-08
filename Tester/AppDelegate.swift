@@ -55,5 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BuglifeDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func submitReport(_ reportData: [String : Any], description: String?, attachmentImages images: [UIImage], wasSuccessful completionHandler: @escaping (Bool) -> Void) {
+        print("reportdata: \(reportData)")
+    }
 
 }
