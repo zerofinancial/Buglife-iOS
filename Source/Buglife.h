@@ -281,7 +281,7 @@ extern NSString * __nonnull const LIFENotificationUserSubmittedReport;
  *
  */
 
-- (void)submitReport:(nonnull LIFEReport *)report wasSuccessful:(nonnull void (^)(BOOL))completionHandler;
+- (void)submitReport:(nonnull NSDictionary<NSString *, id> *)reportData description:(nullable NSString *)description attachmentImages:(nonnull NSArray<UIImage *> *)images wasSuccessful:(nonnull void (^)(BOOL))completionHandler;
 
 /**
  *  Buglife calls this method when the bug reporter is ready to accept attachments.

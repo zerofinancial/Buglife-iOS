@@ -16,6 +16,7 @@
 //
 //
 
+#import <UIKit/UIKit.h>
 #import "LIFEDataProvider.h"
 #import "LIFEReport.h"
 #import "LIFEReproStep.h"
@@ -28,6 +29,7 @@
 #import "Buglife+Protected.h"
 #import "NSMutableDictionary+LIFEAdditions.h"
 #import "NSError+LIFEAdditions.h"
+#import "LIFEReportAttachmentImpl.h"
 
 // This can be used to test the migration path
 #define USES_LEGACY_PENDING_REPORTS_DIRECTORY 0
@@ -183,10 +185,22 @@ static NSString * const kPlatform = @"ios";
         // TODO: Need to remove & re-save so that submissionAttempts actually increments beyond 2
         [self _savePendingReport:report];
     }
+
+    NSDictionary *parameters = [NSDictionary dictionaryWithDictionary:mutableParameters];
     
     // Use delegate submission method, if it exists.
-    if ([_delegate respondsToSelector:@selector(submitReport:wasSuccessful:)]) {
-        [_delegate submitReport:report wasSuccessful:^(BOOL wasSuccessfullySaved) {
+    if ([_delegate respondsToSelector:@selector(submitReport:description:attachmentImages:wasSuccessful:)]) {
+        
+        NSMutableArray *images = [NSMutableArray new];
+        
+        for (LIFEReportAttachmentImpl *attachment in report.attachments) {
+            if (attachment.attachmentData && attachment.isImageAttachment) {
+                UIImage *image = [[UIImage alloc] initWithData:attachment.attachmentData];
+                [images addObject:image];
+            }
+        }
+        
+        [_delegate submitReport:parameters description:report.whatHappened attachmentImages:[images copy] wasSuccessful:^(BOOL wasSuccessfullySaved) {
             if (wasSuccessfullySaved) {
                 
                 LIFELogIntInfo(@"Report submitted!");
@@ -208,7 +222,7 @@ static NSString * const kPlatform = @"ios";
             }
         }];
     } else {
-        NSDictionary *parameters = [NSDictionary dictionaryWithDictionary:mutableParameters];
+        
         [_networkManager POST:@"api/v1/reports.json" parameters:parameters callbackQueue:self.workQueue success:^(id responseObject) {
             
             LIFELogIntInfo(@"Report submitted!");
